@@ -40,10 +40,22 @@
 % \newcommand{\headername}{\color{headings}
 % \fontspec[Path = fonts/calibri/]{Calibri}\fontsize{24pt}{32pt}\selectfont\raggedright}{} {0em}{}
 \newcommand{\headername}[1]{\color{subheadings}
-\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{24pt}{12pt}\selectfont\vspace{10pt}\raggedright {#1} \normalfont}
-
-
+\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{24pt}{12pt}\selectfont\vspace{10pt}\centering {#1} \normalfont}
 \titlespacing{\section}{0pt}{0pt}{0pt}
+
+
+%contact info command
+\newcommand{\namesection}[2]{
+\centering{
+\fontsize{24pt}{12pt}
+\fontspec[Path = fonts/calibri/]{CALIBRIB}\selectfont #1 
+} \\[5pt]
+\centering{
+\color{subheadings}
+\fontspec[Path = fonts/calibri/]{Calibri}\fontsize{11pt}{14pt}\selectfont #2}
+\noindent\makebox[\linewidth]{\color{primary}\rule{\paperwidth}{0.4pt}}
+%\vspace{-15pt}
+}
 
 % Headings command
 \titleformat{\section}{\color{headings}
@@ -53,7 +65,7 @@
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
-\fontspec[Path = fonts/calibri/]{Calibri}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\fontspec[Path = fonts/calibri/]{Calibri}\fontsize{11pt}{12pt}\selectfont\bfseries}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 \newcommand{\runsubsection}[1]{\color{subheadings}

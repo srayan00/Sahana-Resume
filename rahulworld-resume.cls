@@ -47,7 +47,7 @@
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\fontspec[Path = fonts/calibri/]{Calibri}\fontsize{16pt}{24pt}\selectfont\raggedright}{} {0em}{}
+\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{16pt}{24pt}\selectfont\raggedright}{} {0em}{}
 
 \newcommand{\SectionHead}[1]{\smash{\begin{tabular}{l} \hline #1 \\ \hline \end{tabular}\hspace*{-\tabcolsep}}}
 
