@@ -20,6 +20,7 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 \usepackage{amsmath}
+\usepackage{tikz}
 
 
 % Color definitions
@@ -93,3 +94,19 @@
 
 %Location command
 \newcommand{\location}[1]{\color{subheadings}\fontspec[Path = fonts/calibri/]{CALIBRII}\fontsize{11pt}{12pt}\selectfont {#1 \\} \normalfont}
+
+% Proficiency scale
+\newcommand{\grade}[1]{%
+\begin{tikzpicture}
+\clip (1em-.3em,-.3em) rectangle (5em +.5em ,.3em);
+\begin{scope}
+\clip (1em-.3em,-.3em) rectangle (#1em +.5em ,.3em);
+\foreach \x in {1,2,...,5}{
+ \path[fill= headings] (\x em,0) circle (.25em);
+}
+\end{scope}
+\foreach \x in {1,2,...,5}{
+ \draw (\x em,0) circle (.25em);
+}
+\end{tikzpicture}%
+}
