@@ -59,17 +59,18 @@
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\fontspec[Path = fonts/calibri/]{Calibri}\fontsize{16pt}{24pt}\selectfont\raggedright}{} {0em}{}
+\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{16pt}{24pt}\selectfont\raggedright}{} {0em}{}
 
 \newcommand{\SectionHead}[1]{\smash{\begin{tabular}{l} \hline #1 \\ \hline \end{tabular}\hspace*{-\tabcolsep}}}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
-\fontspec[Path = fonts/calibri/]{Calibri}\fontsize{11pt}{12pt}\selectfont\bfseries}{}{0em}{}
+\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{11pt}{12pt}\selectfont\bfseries}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
 \newcommand{\runsubsection}[1]{\color{subheadings}
-\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
+\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{11pt}{12pt}\selectfont\bfseries {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\hspace*{0pt}\hfill\vspace{3pt}\fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
@@ -88,3 +89,7 @@
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+
+
+%Location command
+\newcommand{\location}[1]{\color{subheadings}\fontspec[Path = fonts/calibri/]{CALIBRII}\fontsize{11pt}{12pt}\selectfont {#1 \\} \normalfont}

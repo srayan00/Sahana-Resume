@@ -56,6 +56,7 @@
 \fontspec[Path = fonts/calibri/]{Calibri}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
 \newcommand{\runsubsection}[1]{\color{subheadings}
 \fontspec[Path = fonts/calibri/]{CALIBRIB}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
 
