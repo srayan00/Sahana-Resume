@@ -21,6 +21,7 @@
 \usepackage{lipsum}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{enumitem}
 
 
 % Color definitions
@@ -89,7 +90,12 @@
 \newcommand{\sectionsep}[0]{\vspace{4pt}}
 
 % Bullet Lists with fewer gaps command
-\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+\newenvironment{tightemize}{
+\begin{itemize}[leftmargin =*]
+\setlength{\itemsep}{0.2pt}
+\setlength{\topsep}{0.2pt}
+\parskip0pt \parsep0pt}
+{\end{itemize}\vspace{-\topsep}}
 
 
 %Location command
